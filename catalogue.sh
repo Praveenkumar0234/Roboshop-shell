@@ -8,6 +8,7 @@ echo -e "\e[33m>>>>>>>>>>>> Add application user <<<<<<<<\e[0m"
 useradd roboshop
 
 echo -e "\e[33m>>>>>>>>>>>> crate directory <<<<<<<<\e[0m"
+rm -rf /app
 mkdir /app
 
 echo -e "\e[33m>>>>>>>>>>>> download Application code  <<<<<<<<\e[0m"
@@ -15,6 +16,7 @@ curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue
 
 echo -e "\e[33m>>>>>>>>>>>> change directory to the app <<<<<<<<\e[0m"
 cd /app
+
 
 echo -e "\e[33m>>>>>>>>>>>> Unzip the application code <<<<<<<<\e[0m"
 unzip /tmp/catalogue.zip
