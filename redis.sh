@@ -9,6 +9,7 @@ yum install redis -y
 
 echo -e "\e[32m>>>>>>>>>>> replace the listen address <<<<<<<<<\e[0m"
 sed -i -e 's|127.0.0.1|0.0.0.0|g' /etc/redis.conf
+sed -i -e 's|127.0.0.1|0.0.0.0|g' /etc/redis/redis.conf
 
 echo -e "\e[32m>>>>>>>>>>> enable and start the redis <<<<<<<<<\e[0m"
 systemctl enable redis
