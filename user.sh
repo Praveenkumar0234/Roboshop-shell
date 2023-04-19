@@ -19,13 +19,13 @@ cd /app
 
 
 echo -e "\e[33m>>>>>>>>>>>> Unzip the application code <<<<<<<<\e[0m"
-unzip /tmp/catalogue.zip
+unzip /tmp/user.zip
 
 
 echo -e "\e[33m>>>>>>>>>>>> install nodejs dependency <<<<<<<<\e[0m"
 npm install
 
-echo -e "\e[33m>>>>>>>>>>>> copy the catalogue service <<<<<<<<\e[0m"
+echo -e "\e[33m>>>>>>>>>>>> copy the user service <<<<<<<<\e[0m"
 cp /root/Roboshop-shell/user.service /etc/systemd/system/user.service
 
 echo -e "\e[33m>>>>>>>>>>>> reload the service <<<<<<<<\e[0m"
@@ -42,5 +42,5 @@ echo -e "\e[33m>>>>>>>>>>>> install mongo client <<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
 
 echo -e "\e[33m>>>>>>>>>>>> load the schema <<<<<<<<\e[0m"
-mongo --host mongodb-dev.praveendevops.online </app/schema/catalogue.js
+mongo --host mongodb-dev.praveendevops.online </app/schema/user.js
 
