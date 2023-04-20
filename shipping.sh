@@ -5,7 +5,7 @@ echo -e "\e[34m>>>>>>>>>> add application user <<<<<<<<<<\e[0m"
 useradd roboshop
 
 echo -e "\e[34m>>>>>>>>>> Crate app directory <<<<<<<<<<\e[0m"
-rm rf /app
+rm -rf /app
 mkdir /app
 
 echo -e "\e[34m>>>>>>>>>> download the shipping application code <<<<<<<<<<\e[0m"
