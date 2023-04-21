@@ -29,7 +29,7 @@ echo -e "\e[33m>>>>>>>>>>>> install nodejs dependency <<<<<<<<\e[0m"
 npm install
 
 echo -e "\e[33m>>>>>>>>>>>> copy the cart service <<<<<<<<\e[0m"
-cp /root/Roboshop-shell/cart.service /etc/systemd/system/cart.service
+cp ${script_Path}/cart.service /etc/systemd/system/cart.service
 
 echo -e "\e[33m>>>>>>>>>>>> reload the service <<<<<<<<\e[0m"
 systemctl daemon-reload

@@ -24,7 +24,7 @@ mvn clean package
 mv target/shipping-1.0.jar shipping.jar
 
 echo -e "\e[34m>>>>>>>>>> setup the shipping service <<<<<<<<<<\e[0m"
-cp /root/Roboshop-shell/shipping.service /etc/systemd/system/shipping.service
+cp ${script_Path}/shipping.service /etc/systemd/system/shipping.service
 
 echo -e "\e[34m>>>>>>>>>> reload, enable and start the shipping service <<<<<<<<<<\e[0m"
 systemctl daemon-reload

@@ -21,7 +21,7 @@ cd /app
 pip3.6 install -r requirements.txt
 
 echo -e "\e[31m>>>>>>>>>>> copy payment service <<<<<<<<\e[0m"
-cp /root/Roboshop-shell/payment.service /etc/systemd/system/payment.service
+cp ${script_Path}/payment.service /etc/systemd/system/payment.service
 
 echo -e "\e[31m>>>>>>>>>>> load, enable and start the payment service <<<<<<<<\e[0m"
 systemctl daemon-reload

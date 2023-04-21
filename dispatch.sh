@@ -23,7 +23,7 @@ go get
 go build
 
 echo -e "\e[32m>>>>>>>>> configure the dispatch service <<<<<<<\e[0m"
-cp /root/Roboshop-shell/dispatch.service  /etc/systemd/system/dispatch.service
+cp ${script_Path}/dispatch.service  /etc/systemd/system/dispatch.service
 
 echo -e "\e[32m>>>>>>>>> Load, Enable and start the service <<<<<<<\e[0m"
 systemctl daemon-reload

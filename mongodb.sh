@@ -2,7 +2,7 @@ script_path=$(dirname $0)
 source ${script_path}/common.sh
 
 echo -e "\e[34m>>>>>>>>>>> configuring mongo repo <<<<<<<<<\e[0m"
-cp /root/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${script_Path}/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[34m>>>>>>>>>>> install mongodb <<<<<<<<<\e[0m"
 yum install mongodb-org -y

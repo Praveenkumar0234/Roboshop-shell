@@ -40,7 +40,7 @@ systemctl enable user
 systemctl start user
 
 echo -e "\e[33m>>>>>>>>>>>> copy mongo repo <<<<<<<<\e[0m"
-cp /root/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${script_Path}/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[33m>>>>>>>>>>>> install mongo client <<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
