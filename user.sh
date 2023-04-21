@@ -1,4 +1,9 @@
+
 source common.sh
+
+pwd
+
+exit
 
 echo -e "\e[33m>>>>>>>>>>>> configure nodejs repo <<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
