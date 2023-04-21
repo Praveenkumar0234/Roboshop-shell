@@ -1,3 +1,6 @@
+script_path=$(dirname $0)
+source ${script_path}/common.sh
+
 echo -e "\e[34m>>>>>>>>>>> configuring mongo repo <<<<<<<<<\e[0m"
 cp /root/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 
