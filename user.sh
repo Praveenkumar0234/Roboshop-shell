@@ -32,7 +32,7 @@ echo -e "\e[33m>>>>>>>>>>>> install nodejs dependency <<<<<<<<\e[0m"
 npm install
 
 echo -e "\e[33m>>>>>>>>>>>> copy the user service <<<<<<<<\e[0m"
-cp /root/Roboshop-shell/user.service /etc/systemd/system/user.service
+cp ${script_path}/user.service /etc/systemd/system/user.service
 
 echo -e "\e[33m>>>>>>>>>>>> reload the service <<<<<<<<\e[0m"
 systemctl daemon-reload
