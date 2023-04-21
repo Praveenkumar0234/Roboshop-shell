@@ -1,8 +1,6 @@
-script_path=${dirname $0}
+script_path=$(dirname $0)
 source ${script_path}/common.sh
 
-
-exit
 
 echo -e "\e[33m>>>>>>>>>>>> configure nodejs repo <<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
